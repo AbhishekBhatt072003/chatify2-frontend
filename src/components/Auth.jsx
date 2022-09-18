@@ -31,7 +31,7 @@ const Auth = () => {
         const { username, password, phoneNumber, avatarURL } = form;
         console.log(form);
         // const URL = 'https://localhost:5000/auth';
-        const URL = 'https://chatify-07.herokuapp.com/auth';
+        const URL = 'https://chatify08.herokuapp.com/auth';
 
 
         //making a post request to the backend server for creating user or logging in user accordingly
