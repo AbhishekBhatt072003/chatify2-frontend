@@ -31,7 +31,7 @@ const Auth = () => {
         const { username, password, phoneNumber, avatarURL } = form;
         console.log(form);
         // const URL = 'https://localhost:5000/auth';
-        const URL = 'https://chatify08.herokuapp.com/auth';
+        const URL = 'https://chatify-07.herokuapp.com/auth';
 
 
         //making a post request to the backend server for creating user or logging in user accordingly
@@ -42,15 +42,13 @@ const Auth = () => {
         });
 
 
-
+        console.log(token, userId, hashedPassword, fullName);
         // if the user is successfully created or logged in then store the token and userId in the cookie
         cookies.set('token', token);
         cookies.set('username', username);
         cookies.set('fullName', fullName);
         cookies.set('userId', userId);
 
-
-        //
         if (isSignup) {
             cookies.set('phoneNumber', phoneNumber);
             cookies.set('avatarURL', avatarURL);
