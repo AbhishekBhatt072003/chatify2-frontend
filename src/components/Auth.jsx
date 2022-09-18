@@ -58,7 +58,7 @@ const Auth = () => {
 
         //reload the page after the user is successfully created or logged in and cookies are set
         //after reload our auth token will become valid and we can use it to access the protected routes
-        window.location.reload();
+        // window.location.reload();
     }
 
     const switchMode = () => {
