@@ -29,7 +29,7 @@ const Auth = () => {
         e.preventDefault();
         // submit the form data to the backend server for creating user
         const { username, password, phoneNumber, avatarURL } = form;
-
+        console.log(form);
         // const URL = 'https://localhost:5000/auth';
         const URL = 'https://chatify-07.herokuapp.com/auth';
 
